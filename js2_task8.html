@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>Array Add&Del</title>
+  <script>
+    var color = ['Red','Blue','Green','Yellow'];
+	alert('Colors are '+ color);
+	
+	var addOnBegining = prompt('Enter Color what you want add on Begining');
+	color.unshift(addOnBegining);
+	alert('After added color on the begining: Colors are  '+ color);
+	
+	var addOnEnding = prompt('Enter Color what you want add on Ending');
+	color.push(addOnEnding);
+	alert('After added color on the Ending: Colors are  '+ color);
+	
+	color.unshift('Purple','Orange','Lemon');
+	alert('After added more colors on the Begining: Colors are  '+ color);
+	
+	var removeFirstElement = color.shift();
+	alert('After Removed color on the Begining: Colors are  '+ color);
+	var removeLastElement = color.pop();
+	alert('After Removed color on the Ending: Colors are  '+ color);
+	
+	var DesiredIndex = +prompt('Enter Index number Where u want to add element');
+	var addOnDesIndex = prompt('Enter Color Name which you want to Add');
+	color.splice(DesiredIndex,0,addOnDesIndex) //1st digit is inc. 2nd define how many elements you want to remove.
+	alert('After Added on Desired Position: Colors are  '+ color)
+	
+	var RmDesiredIndex = +prompt('Enter Index number Where u want to Delete element');
+	var RmTill = +prompt('How many elements u want to deleted');
+	color.splice(RmDesiredIndex,RmTill) // On second if you write 3 and 1st digit is 2 so firstly compiler deleted start from 2nd index and count 3 element and then remove ...&... and add element on 2nd index
+	alert('After Deleted Desired Element: Colors are  '+ color)
+  </script>
+</head>
+<body>
+  
+</body>  
+</html>
