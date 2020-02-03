@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Array value found</title>
+  <script>
+      var fruits = ['apple', 'mango', 'banana', 'graps', 'orange'];
+      var get_fruits = +prompt('Enter number of Fruits you want to get!');
+
+      if (get_fruits <= fruits.length) {
+          for (var i = 0; i < get_fruits; i++) {
+              document.write(fruits[i]+'<br/>');
+          }
+      }
+      else
+      {
+          document.write('We have only ' + fruits.length + ' fruits'); 
+      }
+
+  </script>
+</head>
+<body>
+  
+</body>  
+</html>

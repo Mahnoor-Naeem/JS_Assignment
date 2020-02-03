@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Largest Number</title>
+  <script>
+      var max, min = 0;
+      var num_array = [24, 53, 78, 91, 12];
+
+      max = num_array[0];
+      min = num_array[0];
+      for (var i = 0; i < num_array.length; i++)
+      {
+          if (max < num_array[i + 1])
+          {
+              max = num_array[i + 1];
+              
+          }
+          if (min > num_array[i + 1])
+          {
+              min = num_array[i + 1];
+              
+          }
+      }
+      document.write('Largest number of this Array is ' + max +'<br/>');
+      document.write('Smallest number of this Array is ' + min);
+    
+  </script>
+</head>
+<body>
+  
+</body>  
+</html>

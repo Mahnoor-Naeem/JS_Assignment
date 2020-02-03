@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Do-While loop</title>
+  <script>
+      //var rand = Math.random();
+      //var impRand = ((rand * 100) + 1);
+      var temp = 4;
+      var userNo = +prompt('Let\'s Play a Game \n Enter a number 1 to 100');
+      var i = 0;
+      do {
+          if (temp === userNo) {
+              alert('You are Right! \n You Won :)');
+              break;
+          }
+          else {
+              alert('Incorrect! Please Try Again...');
+              userNo = +prompt('Enter a number 1 to 100');
+              i++;
+          }
+      } while (i < 2);
+
+
+  </script>
+</head>
+<body>
+  
+</body>  
+</html>

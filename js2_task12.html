@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Number Series</title>
+  <script>
+      document.write('Counting:');
+      for(var i = 1; i<=15; i++)
+      {
+          document.write("\n" + i);
+      }
+
+      document.write('<br/> Reverse Counting:');
+      for (var i = 10; i >= 1; i--)
+      {
+          document.write('\n' + i);
+      }
+
+      document.write('<br/> Even Number');
+      for (var j = 0; j <= 20; j++)
+      {
+          if (j === 0)
+          {
+              document.write('\n' + j);
+          }
+          else if (j % 2 === 0)
+          {
+              document.write('\n' + j);
+          }
+      }
+
+      document.write('<br/> Odd Number');
+      for (var j = 1; j <= 20; j++)
+      {
+          if (j % 2 !== 0)
+          {
+              document.write('\n' + j);
+          }
+      }
+
+      document.write('<br/> Series:');
+      for (var j = 2; j <= 20; j=j+2)
+      {
+          document.write('\n' + j + 'K'); 
+      }
+
+  </script>
+</head>
+<body>
+  
+</body>  
+</html>

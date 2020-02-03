@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Replacing Character</title>
+  <script>
+      // Single word replacing 
+      var str = 'Hyderabad';
+      var newstr = str.replace('Hyder', 'Islam');
+      document.write('Your sring is ' + str + '<br/>');
+      document.write('After replacing the new String is ' + newstr+ '<br/>');
+
+      // More then one word replacing
+      var text = 'Ali and Sami are the best friends. They play cricket and football together.';
+      text = text.replace(/and/g, '&');
+      document.write('Your Text is ' + text + '<br/>');
+      document.write('After Globally Replacing the new text is ' + text);
+  </script>
+</head>
+<body>
+  
+</body>  
+</html>

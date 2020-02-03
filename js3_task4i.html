@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Count word in the given String</title>
+    <script>
+    // Check word and then count how many time its occured
+
+        //var elementFind = text.lastIndexOf('the',20);
+        //if (elementFind !== -1)
+        //{
+        //    document.write('The word exist on ' + elementFind + ' index');
+        //}
+        //else
+        //{
+        //    document.write('Not Found');
+        //}
+      
+      var count = 0;
+      var text = 'The quick brown fox jumps over the lazy dog.';
+        text = text.toLowerCase();
+        //document.write(text.length);
+        for (var i = 0; i < text.length; i++)
+        {
+            if (text.slice(i, i + 3) === 'the')
+            {
+                count++;
+            }
+          //var elementFind = text.indexOf('the',i)
+          
+          //if (elementFind !== -1) {
+          //    count++;
+          //    document.write(elementFind+'<br/>');
+              
+         // }
+        }
+      document.write(count);
+    </script>
+</head>
+<body>
+
+</body>
+</html>      

@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Function of Count no of Specific Letter</title>
+  <script>
+      function countLetter(string, letter)
+      {
+          var counter = 0;
+          for (var i = 0; i < string.lenght; i++)
+          {
+              if (string.slice(i, i + 1) === letter)
+              {
+                counter++;
+              }
+          }
+          //alert('In the Given String no of ' + letter + ' is ' + counter);
+          console.log('In the Given String no of ' + letter + ' is ' + counter);
+      }
+
+          var word = 'hellow World';
+          var charc = 'o';
+          countLetter(word, charc);
+
+
+  </script>
+</head>
+<body>
+  
+</body>  
+</html>

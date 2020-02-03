@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Secret Number Game</title>
+  <script>
+    var userNumber = +prompt('Lets play a Game \n Enter a number from 1 to 10...');
+	var randomNumber = ((Math.random()*10)+1);
+	var secretNumber = Math.floor(randomNumber);
+	document.write(secretNumber);
+	
+	if(secretNumber === userNumber)
+	  {
+	    alert('Owsem! Your Entered Number '+userNumber+' Matched with Computer Secret Number '+secretNumber);
+	  }
+	else
+	  {
+	    alert('OHOO :( Try again...' )
+	  }
+  </script>
+</head>
+<body>
+  
+</body>  
+</html>

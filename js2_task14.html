@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Find Element from an Array</title>
+  <script>
+      var bakery_items = ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+      var check_item = prompt();
+      var flag = false;
+
+      for (var i = 0; i < bakery_items.length; i++)
+      {
+          if (check_item == bakery_items[i])
+          {
+              flag = true;
+              break;
+          }
+      }
+      if (flag) {
+          alert('Item Found! You entered ' + check_item);
+      }
+      else
+      {
+          alert('Item not Found! You entered ' + check_item);
+      }
+
+
+  </script>
+</head>
+<body>
+  
+</body>  
+</html>

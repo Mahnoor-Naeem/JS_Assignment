@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>Findind Segments</title>
+  <script>
+      // Cheack Letter!
+      var str = 'Pakistani';
+      var findLetter = str.indexOf('n');
+      //console.log(findLetter);
+      if (findLetter === -1) {
+          
+          alert('Letter not Found in the Word \n');
+      }
+      else
+      {
+          alert('Letter Found in the Word');
+      }
+
+      // Cheack Special Symbol!
+      var userName = prompt('Enter User Name:');
+      var sSymbl1 = userName.indexOf('@');
+      var sSymbl2 = userName.indexOf('!');
+
+      if (sSymbl1 === -1 && sSymbl2 === -1) {
+          alert('User Name is ' + userName);
+      }
+      else
+      {
+          alert('Invalid Username');
+      }
+
+
+
+  </script>
+</head>
+<body>
+  
+</body>  
+</html>
